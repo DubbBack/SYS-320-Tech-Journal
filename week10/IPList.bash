@@ -17,7 +17,7 @@ if [ ${#prefix} -lt 6 ] ; then
 fi
 
 
-for i in {1..20}
+for i in {1..254}
 do
 	ping -c 1 $prefix.$i > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
